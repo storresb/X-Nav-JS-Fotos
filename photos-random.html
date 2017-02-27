@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	 <title>Photos Random</title>
+	 <script type="text/javascript" charset="utf-8">
+       function fotos(){
+         var urls = [
+           "https://image.freepik.com/vector-gratis/ciudades-horizonte-europa_72147506862.jpg",
+           "https://image.freepik.com/foto-gratis/hermosa-cascada-natural_1127-284.jpg", 
+           "https://image.freepik.com/vector-gratis/vector-luz-de-luna_23-2147490315.jpg",
+         ];
+         var elemento = document.getElementById('foto');
+         var fotoURL = urls[Math.floor(Math.random()*urls.length)]
+         elemento.innerHTML = '<img src=" ' + fotoURL + '">';
+       };
+     </script>
+</head>
+<body>
+ <p id="another"><a href="javascript:document.location.reload()">Otra foto!!!</a></p>
+  <span id="foto"></span>
+  <script type="text/javascript" charset="utf-8">
+  	fotos();
+  </script>
+</body>
+</html>
+
+
+
